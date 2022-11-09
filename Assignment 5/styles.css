@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Playfair+Display:wght@400;500;600;700;900&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+--background-color: #e7e6f7;
+
+--color-h1: #2d3142;
+--color-text: #827081;
+--color-a: #0c0910;
+
+--hover-a: #aea3b0;
+--hover-i: #aea3b0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ body {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--color-text); 
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    text-align: center;
+}
+ h1 {
+    font-size: 50px;
+   
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-h1);
+ }
+
+.move {
+    text-transform: uppercase;
+    background-image: linear-gradient(-100deg,
+    #7400b8 0%,
+    #5e60ce 29%,
+    #b5179e 67%,
+    #7209b7 100%);
+    background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+  background-clip: text;
+  animation: textclip 2s cubic-bezier(0.25, 0.35, 0.62, 0.4) infinite;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
+.container {
+    display: inline-block;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
+}
+.list-ul {
+    color: var(--color-h1);
+    margin-top: 30px;
+}
+
+.list-ol {
+    margin-top: 30px;
+color: var(--color-h1);
+    text-align: left;
+}
+
+li {
+    font-size: 18px;
+}
+
+.contact-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.contact {
+   margin-top: 40px;
+   margin-left: -20px;
+   margin-bottom: 10px;
+}
+
+a {
+    font-size: 17px;
+text-decoration: none;
+color: var(--color-a);
+}
+
+a:hover {
+color: var(--hover-a);
+font-weight: 500;
+}
+
+footer {
+    text-align: right;
+    font-size: 1rem;
+    padding-right: 40px;
+    padding-bottom: 1em;
+ }
+
+ i {
+    font-size: 1.2rem;
+    padding-right: 15px;
+    color: var(--color-i);
+ }
+
+ i:hover {
+    color: var(--hover-i);
+ }
